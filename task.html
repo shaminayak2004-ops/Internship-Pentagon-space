@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <table border="1">
+        <form>
+            <fieldset>
+                <legend>Form</legend>
+                <label for="Fullname">Fullname</label>
+                <input type="text" id="Fullname"/><br>
+                <label for="Lastname">Lastname</label>
+                <input type="text" id="Lastname"/><br><br>
+                <label for="dob">DOB</label>
+                <input type="date" id="Dob" name="dob"><br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female<br>
+                <label for="EMAIL ID">EMAIL ID</label>
+                <input type="text" id="EMAIL ID"/><br>
+                <label for="MOBILE NO">MOBILE NO:</label>
+                <input type="tel" id="MOBILE NO" name="MOBILE NO" pattern="[0-9]{10}" placeholder="Enter 10 digit number"><br>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" cols="40"></textarea><br>
+                <label for="CITY">CITY</label>
+                <input type="text" id="CITY"/><br>
+                <label for="PINCODE">PINCODE</label>
+                <input type="tel" id="PINCODE" name="PINCODE" pattern="[0-9]{10}" placeholder=""Enter 16 digit number"><br>
+                <label for="EMAIL ID">EMAIL ID</label>
+                <input type="text" id="EMAIL ID"/><br>
+                <label for="STATE">STATE</label>
+                <input type="text" id="STATE"/><br>
+                <label for="COUNTRY">COUNTRY</label>
+                <input type="text" id="COUNTRY"/><br>
+                <label>HOBBIES:</label><br>
+                <input type="checkbox" name="HOBBIES" value="DRAWING">DRAWING
+                <input type="checkbox" name="HOBBIES" value="SINGING"> SINGING
+                <input type="checkbox" name="HOBBIES" value="DANCING"> DANCING
+                <input type="checkbox" name="HOBBIES" value="OTHER"> OTHER
+                <table border="1"  celspacing="10px" celpadding="10px">
+                <tr>
+                    <td>Qualification</td>
+                    <td>
+                        <table border="1" cellpadding="5">
+                            <tr>
+                    <th> SI.NO</th>
+                    <th>BOARD </th>
+                    <th>PERCENTAGE</th>
+                    <th>YEAR OF PASS</th>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                     <tr>
+                        <td>2</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                     <tr>
+                        <td> 3  </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    </table>
+                </table>
+            </td>
+        </tr>
+            <label for="courses Applied">courses Applied</label>
+            <input type="radio" name="course"> BCA
+            <input type="radio" name="course"> B.Com
+            <input type="radio" name="course"> B.Sc
+            <input type="radio" name="course"> B.A<br>
+            <label for="button">Button</label>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </table>
+</body>
+</html>

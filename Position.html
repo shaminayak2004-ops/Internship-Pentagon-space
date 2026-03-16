@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #parent{
+            
+            height: 1000px;
+            width:3000px;
+            border:10px solid black;
+            display:flex;
+           
+        }
+        nav{
+            background-color: royalblue;
+            height:100px;
+            position: sticky;
+            top: 1px;
+        }
+        #box1{
+            background-color: cadetblue;
+            height: 500px;
+            width: 250px;
+            border:1px solid black;
+            position: fixed;
+            bottom:10px;
+            left: 10px;
+
+        }
+        #box2{
+            background-color: pink;
+            height: 500px;
+            width: 250px;
+            position: absolute;
+            top: 0px;
+            left:0px;
+            
+            border:1px solid black
+                     
+            
+
+        }
+        #box3{
+            background-color: rgba(251, 255, 44, 0.959);
+            height: 500px;
+            width: 250px;
+            border:1px solid black;
+            position: relative;
+            left: 50px;
+
+
+        }
+        #box4{
+            background-color: mediumvioletred;
+            height: 500px;
+            width: 250px;
+            position:relative;
+            top:35px;
+            left:200px;
+            border:1px solid black
+
+
+        }
+    </style>
+</head>
+<body>
+    <nav> Welcome</nav> 
+    <div id="parent">
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    </div>
+</body>
+</html>

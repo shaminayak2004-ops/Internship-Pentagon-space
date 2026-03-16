@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber application</title>
+    <style>
+       nav{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+       }
+        
+        .header {
+            height: "200px";
+            display: flex;
+            border: 20px solid rgb(8, 8, 8);
+            background-color: rgb(8, 8, 8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font: size 50px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .card img {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+
+        .card input {
+            width: 250pxpx;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .card button {
+            width: 100px;
+            padding: 10px;
+            background-color: #070707;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #050000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+       <div class="header">
+        <h1>UBER</h1>
+    </div>
+    </nav>
+        <div class="container">
+            <div class="card">
+                <img src="https://i0.wp.com/www.futuretechmagazine.net/wp-content/uploads/2015/12/Ather-Energy-S340-Electric-Scooter.png"
+                    alt="Bike">
+                <input type="number" placeholder="Enter KM">
+                <button>Book now</button>
+            </div>
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.68tZ9GPF_UnunTr3kJsQIAHaHa?pid=Api&P=0&h=180" alt="auto">
+                <input type="number" placeholder="Enter KM">
+                <button>Book now</button>
+            </div>
+            <div class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.90_IXyFPb47LZ_AYAe1ylAHaEK?pid=Api&P=0&h=180"
+                    alt="car">
+                    
+                <input type="number" placeholder="Enter KM">
+                <button>Book now</button>
+            </div>
+        </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solar System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+    background-image: url(https://wallpaperaccess.com/full/3231722.jpg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.solar-system{
+    position:relative;
+    width:500px;
+    height:500px;
+}
+
+/* Sun */
+.sun{
+    position:absolute;
+    width:80px;
+    height:80px;
+    background-image: url(http://pngimg.com/uploads/sun/sun_PNG13424.png);
+     background-size:cover;
+     background-position:center;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* Orbit */
+.orbit{
+    position:absolute;
+    border:1px solid white;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation:rotate 10s linear infinite;
+}
+
+/* Planets */
+.planet{
+    position:absolute;
+    border-radius:50%;
+    top:-10px;
+    left:50%;
+}
+
+/* Mercury */
+.mercury-orbit{
+    width:120px;
+    height:120px;
+}
+.mercury{
+    width:15px;
+    height:15px;
+    background-image: url(https://images.rawpixel.com/image_png_1100/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsX29mZmljZV8zM19tZXJjdXJ5X19pc29sYXRlZF9vbl93aGl0ZV9iYWNrZ3JvdW5kX2FlZWVmMzcyLTA1YzQtNDczOC1hZWVhLWFlZDljNDhmNGU4Yy5wbmc.png);
+    background-size: cover;
+    
+}
+
+/* Venus */
+.venus-orbit{
+    width:170px;
+    height:170px;
+    animation-duration:15s;
+}
+.venus{
+    width:20px;
+    height:20px;
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.h5DY1FWopDe0-EovUFf4lQHaHa?pid=Api&P=0&h=180);
+    background-size: cover;
+}
+
+/* Earth */
+.earth-orbit{
+    width:230px;
+    height:230px;
+    animation-duration:20s;
+}
+.earth{
+    width:22px;
+    height:22px;
+    background-image: url(https://pngimg.com/uploads/earth/earth_PNG16.png);
+    background-size: cover;
+}
+
+/* Mars */
+.mars-orbit{
+    width:290px;
+    height:290px;
+    animation-duration:25s;
+}
+.mars{
+    width:18px;
+    height:18px;
+    background-image: url(https://www.pngall.com/wp-content/uploads/13/Mars-PNG-Picture.png);
+    background-size: cover;
+}
+/* jupiter */
+.jupiter-orbit{
+     width: 350px;
+    height: 350px;
+    animation-duration:30s;
+}
+.jupiter{
+    width: 20px;
+    height:20px;
+    background-image: url(https://png.pngtree.com/png-clipart/20240309/original/pngtree-beautiful-planet-jupiter-png-image_14549614.png);
+    background-size: cover;
+}
+/* saturn */
+.saturn-orbit{
+
+    width: 400px;
+    height: 400px;
+    animation-duration:35s;
+}
+.saturn{
+    width:22px;
+    height: 22px;
+    background-image: url(https://png.pngtree.com/png-clipart/20221228/original/pngtree-orange-planet-with-ring-and-stars-3d-icon-png-image_8816012.png);
+    background-size: cover;
+}
+.uranus-orbit{
+    width: 450px;
+    height:450px;
+    animation-duration: 40s;
+}
+.uranus{
+    width: 24px;
+    height: 24px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/016/778/851/non_2x/planet-galaxy-space-free-png.png);
+    background-size: cover;
+}
+.neptune-orbit{
+    width:500px;
+    height: 500px;
+    animation-duration: 45s;
+}
+.neptune{
+    width: 26px;
+    height: 26px;
+    background-image: url(https://tse3.mm.bing.net/th/id/OIP.atANcns834nXC71PBgHRUgHaHV?pid=Api&P=0&h=180);
+    background-size: cover;
+}
+
+
+
+
+/* Rotation animation */
+@keyframes rotate{
+    from{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+
+<div class="solar-system">
+
+    <div class="sun"></div>
+
+    <div class="orbit mercury-orbit">
+        <div class="planet mercury"></div>
+    </div>
+
+    <div class="orbit venus-orbit">
+        <div class="planet venus"></div>
+    </div>
+
+    <div class="orbit earth-orbit">
+        <div class="planet earth"></div>
+    </div>
+
+    <div class="orbit mars-orbit">
+        <div class="planet mars"></div>
+    </div>
+
+    <div class="orbit jupiter-orbit">
+        <div class="planet jupiter"></div>
+    </div>
+    <div class="orbit saturn-orbit">
+        <div class="planet saturn"></div>
+    </div>
+    <div class="orbit uranus-orbit">
+        <div class="planet uranus"></div>
+    </div>
+    <div class="orbit neptune-orbit">
+        <div class="planet neptune"></div>
+    </div>
+</div>
+
+</body>
+</html>
